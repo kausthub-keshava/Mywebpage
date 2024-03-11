@@ -1,87 +1,64 @@
 # MyST Markdown Demos
 
-Here is a demo of MyST Markdown.
+Here's a demonstration of Markdown with a focus on Formula 1 (F1) calculation.
 
-
+### Data Table
 
 |    Training   |   Validation   |
 | :------------ | -------------: |
 |        0      |        5       |
 |     13720     |      2744      |
 
+### Text
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
-```{note} Notes require **no** arguments,
-so content can start here.
-```
+### Notes and Alerts
 
-```{warning} This is an example
-of a warning directive.
-```
+> **Note:** Notes require **no** arguments, so content can start here.
 
-```{tip} This is an example
-of a tip directive.
-```
+> **Warning:** This is an example of a warning.
 
-```{caution} This is an example
-of a caution directive.
-```
+> **Tip:** This is an example of a tip.
 
-```{attention} This is an example
-of an attention directive.
-```
+> **Caution:** This is an example of a caution directive.
 
-```{hint} This is an example
-of a hint directive.
-```
+> **Attention:** This is an example of an attention directive.
 
-```{important} This is an example
-of an important directive.
-```
+> **Hint:** This is an example of a hint directive.
 
-```{figure} ../assets/logo.png
-:height: 150px
-:name: figure-example
+> **Important:** This is an example of an important directive.
 
-Here is my figure caption!
-```
+### Image
 
-	
-This is an example of an
-inline equation $z=\sqrt{x^2+y^2}$.
+![My Figure](../assets/logo.png)
+*Here is my figure caption!*
 
-This is an example of a
-math block
+### Equations
+
+Inline equation: \( z=\sqrt{x^2+y^2} \).
+
+Block equation:
 
 $$
 z=\sqrt{x^2+y^2}
 $$
 
-
-This is an example of a
-math block with a label
+Labeled block equation:
 
 $$
 z=\sqrt{x^2+y^2}
-$$ (mylabel)
+\tag{mylabel}
+$$
 
-	
-This is an example of a
-math directive with a
-label
-```{math}
-:label: eq-label
+Referencing the equation: See equation (mylabel).
 
-z=\sqrt{x^2+y^2}
-```
+### Code Blocks
 
-Check out equation {eq}`eq-label`.
+Inline code: `boolean example = true;`
 
-
-Wrap in-line code blocks in backticks: `boolean example = true;`.
+Python code block:
 
 ```python
 note = "Python syntax highlighting"
-print(node)
-```
+print(note)
